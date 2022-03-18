@@ -1,0 +1,40 @@
+### Get all records
+GET http://localhost:3000/adverts
+Accept: application/json
+
+### Get single record
+GET http://localhost:3000/adverts/2
+Accept: application/json
+
+### Add new record to array
+POST http://localhost:3000/adverts
+Content-Type: application/json
+
+{
+  "title": "new",
+  "author": "hello"
+}
+
+### Set given object to single record
+PUT http://localhost:3000/adverts/3
+Content-Type: application/json
+
+{
+  "title": "new1",
+  "author": "hello2"
+}
+
+### Updates single or multiple properties in single record
+PATCH http://localhost:3000/adverts/3
+Content-Type: application/json
+
+{
+  "title": "new5"
+}
+
+### Deletes single record
+DELETE localhost:3000/adverts/3
+
+### Find all records that mach query
+GET http://localhost:3000/adverts?title_like=bike
+Accept: application/json
