@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npm install -g json-server",
-    "start": "json-server --watch db.json",
+    "start": "json-server --watch --port 3200 db.json",
     "start-random": "json-server index.js"
   },
   "author": "",
