@@ -1,13 +1,13 @@
 ### Get all records
-GET http://localhost:3000/adverts
+GET http://localhost:3200/adverts
 Accept: application/json
 
 ### Get single record
-GET http://localhost:3000/adverts/2
+GET http://localhost:3200/adverts/2
 Accept: application/json
 
 ### Add new record to array
-POST http://localhost:3000/adverts
+POST http://localhost:3200/adverts
 Content-Type: application/json
 
 {
@@ -23,7 +23,7 @@ Content-Type: application/json
 }
 
 ### Set given object to single record
-PUT http://localhost:3000/adverts/2
+PUT http://localhost:3200/adverts/2
 Content-Type: application/json
 
 {
@@ -38,17 +38,17 @@ Content-Type: application/json
 }
 
 ### Updates single or multiple properties in single record
-PATCH http://localhost:3000/adverts/2
+PATCH http://localhost:3200/adverts/2
 Content-Type: application/json
 
 {
   "title": "Medium pizza",
-  "categoryId": 5
+  "categoryId": 6
 }
 
 ### Deletes single record
-DELETE localhost:3000/adverts/2
+DELETE localhost:3200/adverts/2
 
 ### Find all records that mach query
-GET http://localhost:3000/adverts?title_like=Cotton
+GET http://localhost:3200/adverts?title_like=Cotton
 Accept: application/json
