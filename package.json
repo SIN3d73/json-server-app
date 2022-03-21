@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npm install -g json-server",
     "start": "json-server --watch --port 3200 db.json",
-    "start-random": "json-server index.js"
+    "start-random": "json-server --port 3200 index.js"
   },
   "author": "",
   "license": "ISC",

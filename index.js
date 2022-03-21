@@ -16,7 +16,7 @@ module.exports = () => {
     price: faker.commerce.price(),
     description: faker.commerce.productDescription(),
     seller: faker.name.firstName(),
-    image: faker.image.business(400, 400),
+    image: `${faker.image.business(400, 400)}?i=${i}`,
     sellerPhone: faker.phone.phoneNumber('+48 ### ### ###'),
     canNegotiate: faker.datatype.boolean(),
     createdOn: faker.date.recent(),
